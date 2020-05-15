@@ -11,6 +11,7 @@ import com.rps.booksandauthors.entity.Book
 import com.rps.booksandauthors.utils.Converters
 
 @Database(entities = [Book::class], version = 1)
+@TypeConverters(Converters::class)
 abstract class BooksDatabase:RoomDatabase() {
     abstract fun bookDao(): BookDao
     companion object {

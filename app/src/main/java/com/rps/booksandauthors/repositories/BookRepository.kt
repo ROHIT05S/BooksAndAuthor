@@ -10,4 +10,9 @@ class BookRepository(private val bookDao: BookDao) {
         bookDao.insert(book)
     }
 
+    @WorkerThread
+    suspend fun insertBookList(bookList:List<Book>){
+        bookDao.insertBookList(bookList);
+    }
+
 }

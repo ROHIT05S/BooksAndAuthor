@@ -19,4 +19,7 @@ class BooksViewModel(application: Application) : AndroidViewModel(application) {
     fun insert(book: Book) = viewModelScope.launch(Dispatchers.IO) {
         bookRepository.insert(book)
     }
+    fun insertBookList(bookList:List<Book>) = viewModelScope.launch (Dispatchers.IO){
+        bookRepository.insertBookList(bookList);
+    }
 }

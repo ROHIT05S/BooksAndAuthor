@@ -8,4 +8,7 @@ import com.rps.booksandauthors.entity.Book
 interface BookDao {
     @Insert
     suspend fun insert(book : Book)
+
+    @Insert
+    suspend fun insertBookList(bookList: List<Book>)
 }
