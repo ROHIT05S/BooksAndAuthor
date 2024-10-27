@@ -13,7 +13,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-       /* val readFileUtils:ReadFileUtils? = ReadFileUtils()
+        Log.d("Rohit----","On Create Method Called")
+              /* val readFileUtils:ReadFileUtils? = ReadFileUtils()
         val jsonFileString = readFileUtils?.getJsonDataFromAsset(this, "books.json")
         Log.d("dataFromFile ------", jsonFileString)
 
