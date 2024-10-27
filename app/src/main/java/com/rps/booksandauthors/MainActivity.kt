@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d("Rohit----","On Create Method Called")
+        Log.d("4nn4n)
               /* val readFileUtils:ReadFileUtils? = ReadFileUtils()
         val jsonFileString = readFileUtils?.getJsonDataFromAsset(this, "books.json")
         Log.d("dataFromFile ------", jsonFileString)
